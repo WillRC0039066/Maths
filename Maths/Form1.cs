@@ -29,6 +29,36 @@ namespace Maths
             richTextBox1.AppendText(d1 + "\n" + d2 + "\n" + d3 + "\n");
 
 
+            string st = "three";
+            try
+            {
+                int it = int.Parse(st);
+            }
+            catch
+            {
+                MessageBox.Show(st + " is not an integer");
+            }
+
+            string s2 = "3.2";
+            try
+            {
+                int i7 = int.Parse(st);
+            }
+            catch
+            {
+                MessageBox.Show(s2 + " is not an integer");
+                int i7 = 0;
+            }
+
+            string s3 = "pi";
+            try
+            {
+                double d7 = double.Parse(s3);
+            }
+            catch
+            {
+                double d7 = 0;
+            }
         }
 
         private void RichTextBox1_TextChanged(object sender, EventArgs e)
